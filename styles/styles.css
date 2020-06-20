@@ -130,12 +130,12 @@ h1 {
           transform: translateY(-30px);
 }
 
-.pointer {
+.turn-indicator {
   position: fixed;
   width: 80px;
   height: 10px;
-  -webkit-transform: translate3d(55px, -70px, 0);
-          transform: translate3d(55px, -70px, 0);
+  -webkit-transform: translate3d(49px, -70px, 0);
+          transform: translate3d(49px, -70px, 0);
   background-color: #fd951f;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
@@ -144,8 +144,8 @@ h1 {
 }
 
 .change {
-  -webkit-transform: translate3d(180px, -70px, 0);
-          transform: translate3d(180px, -70px, 0);
+  -webkit-transform: translate3d(167px, -70px, 0);
+          transform: translate3d(167px, -70px, 0);
 }
 
 .restart-button {
