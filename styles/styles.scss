@@ -1,0 +1,160 @@
+$background-color: #130f0d;
+$base-color: #fd951f;
+
+$font-color: #FFFFFF;
+$border-size: 5px;
+
+@function define-border() {
+    @return $border-size solid $base-color;
+}
+
+@function remove-border() {
+    @return $border-size transparent;
+}
+
+html {
+    background: $background-color;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: $font-color;
+}
+
+.line {
+    display: flex;
+}
+
+.field {
+    width: 100px;
+    height: 100px;
+    border: define-border();
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-field {
+    border-top: remove-border();
+    border-left: remove-border();
+}
+
+.second-field {
+    border-top: remove-border();
+}
+
+.third-field {
+    border-top: remove-border();
+    border-right: remove-border();
+}
+
+.fourth-field {
+    border-left: remove-border();
+}
+
+.sixth-field {
+    border-right: remove-border();
+}
+
+.seventh-field {
+    border-left: remove-border();
+    border-bottom: remove-border();
+}
+
+.eighth-field {
+    border-bottom: remove-border();
+}
+
+.ninth-field {
+    border-right: remove-border();
+    border-bottom: remove-border();
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.circle {
+    width: 45px;
+    height: 45px;
+    border: 12px solid white;
+    border-radius: 50px;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.x {
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.x:after {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "\274c";
+    font-size: 80px;
+    color: white;
+    line-height: 100px;
+    text-align: center;
+}
+
+.user-infos {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.turns {
+    transform: translateY(-30px);
+}
+
+.pointer {
+    position: fixed;
+    width: 80px;
+    height: 10px;
+    transform: translate3d(55px, -70px, 0);
+    background-color: $base-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.change {
+    transform: translate3d(180px, -70px, 0);
+}
+
+.restart-button {
+    width: 150px;
+    height: 30px;
+    margin-top: 50px;
+    border: 0;
+    background: $base-color;
+    color: $font-color;
+    font-size: 20px;
+    font-family: Roboto, sans-serif;
+}
+
+.scoreboard {
+    float: left;
+    width: 5px;
+    font-size: 50px;
+    color: $font-color;
+    font-family: Roboto, sans-serif;
+}
