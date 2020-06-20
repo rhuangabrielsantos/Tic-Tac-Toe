@@ -98,20 +98,11 @@ h1 {
 }
 
 .x {
+    width: 60px;
+    fill: white;
+
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
-}
-
-.x:after {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    content: "\274c";
-    font-size: 80px;
-    color: white;
-    line-height: 100px;
-    text-align: center;
 }
 
 .user-infos {
